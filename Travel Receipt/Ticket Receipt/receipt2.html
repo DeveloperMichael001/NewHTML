@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Generator</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <h1>Ticket Generator</h1>
+
+    <form id="ticketForm">
+        <label for="ticketNo">Ticket No:</label>
+        <input type="text" id="ticketNo" required><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required><br>
+
+        <label for="departure">Departure:</label>
+        <input type="text" id="departure" required><br>
+
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" required><br>
+
+        <label for="vehicle">Vehicle:</label>
+        <input type="text" id="vehicle" required><br>
+
+        <label for="seatNo">Seat No:</label>
+        <input type="text" id="seatNo" required><br>
+
+        <label for="fare">Fare:</label>
+        <input type="number" id="fare" required><br>
+
+        <label for="passName">Pass Name:</label>
+        <input type="text" id="passName" required><br>
+
+        <label for="passPhone">Pass Phone:</label>
+        <input type="text" id="passPhone" required><br>
+
+        <label for="servedBy">Served By:</label>
+        <!-- <input type="text" id="servedBy" required><br> -->
+        <select name="servedBy" type="text" id="servedBy" required>
+            <option value="Michael Festas">Michael Festas</option>
+            <option value="Leilah Aketch">Leilah Aketch</option>
+            <option value="Teddy Omondi">Teddy Omondi</option>
+        </select><br><br>
+
+        <button type="button" onclick="generateTicket()">Generate Ticket</button>
+    </form>
+
+    <div id="ticketContainer" style="display: none;">
+        <h2>VICTORIA SHUTTLES</h2><HR/>
+        <p>Nairobi: 0722177464</p>
+        <p>Nakuru: 0721600678</p>
+        <p>Eldoret: 0722257014</p>
+        <p>Kitale: 0722257014</p>
+        <p>Kabamet: 0727048145</p><HR/>
+
+        <p>Ticket No: <span id="ticketNoDisplay"></span></p>
+        <p>Date: <span id="dateDisplay"></span></p>
+        <p>Departure: <span id="departureDisplay"></span></p>
+        <p>Destination: <span id="destinationDisplay"></span></p>
+        <p>Vehicle: <span id="vehicleDisplay"></span></p>
+        <p>Seat No: <span id="seatNoDisplay"></span></p>
+        <p>Fare: <span id="fareDisplay"></span></p>
+        <p>Pass Name: <span id="passNameDisplay"></span></p>
+        <p>Pass Phone: <span id="passPhoneDisplay"></span></p>
+        <p>Served By: <span id="servedByDisplay"></span></p>
+
+        <button onclick="printTicket()">Print Ticket</button>
+    </div>
+
+    <script src="receipt2.js"></script> </body>
+</html>

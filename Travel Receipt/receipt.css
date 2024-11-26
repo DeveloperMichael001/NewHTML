@@ -1,0 +1,21 @@
+.ticket {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.header {
+    text-align: left;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.details p {
+    margin: 5px 0;
+}
+.span {
+    margin: 10px;
+    padding: 10px;
+}

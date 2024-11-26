@@ -1,6 +1,6 @@
 body{
     margin: 0 auto;
-    width: 550px;
+    width: 70%;
     background-size: auto;
     background-attachment: fixed;
     font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -38,7 +38,7 @@ color: #f1f1f1;
 
 .container{
     max-width: 500px;
-    min-width: 550px;
+    min-width: 70%;
     margin: 0 auto;}
 #content {
     overflow: auto;
@@ -140,6 +140,7 @@ border-radius: 3px;
     width: 150px;
     float: left;
     margin: 5px;
+    margin-left: 50px;
     padding: 10px;}
 .column2 {
     background-color: #efefef;
@@ -150,6 +151,13 @@ border-radius: 3px;
 .column3 {
     background-color: #efefef;
     max-width: 150px;
+    float: left;
+    margin: 5px;
+    padding: 10px;
+}
+.column4 {
+    background-color: #efefef;
+    width: 150px;
     float: left;
     margin: 5px;
     padding: 10px;

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Generator</title>
+    <link rel="stylesheet" href="receipt.css">
+</head>
+<body>
+    <h1>VICTORIA SHUTTLES</h1>
+
+    <form id="ticketForm">
+        <label for="ticketNumber"><b>Ticket Number</b></label><br>
+        <span><input type="text" id="ticketNumber" required></span><br>
+
+        <label for="date"><b>Date</b></label><br>
+        <span><input type="date" id="date" required></span><br>
+
+        <label for="departureTime"><b>Departure Time</b></label><br>
+        <span><input type="time" id="departureTime" required></span><br>
+
+        <label for="departure"><b>Departure</b></label><br>
+        <!-- <span><input type="text" id="departure" required></span><br><br> -->
+        <select name="departure" type="text" id="departure" required>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Nakuru">Nakuru</option>
+            <option value="Kericho">Kericho</option>
+        </select><br>
+
+        <label for="destination"><b>Destination</b></label><br>
+        <!-- <input type="text" id="destination" required><br><br> -->
+        <select name="destination" type="text" id="destination" required>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Nakuru">Nakuru</option>
+            <option value="Kericho">Kericho</option>
+        </select><br>
+
+        <label for="vehicleNumber"><b>Vehicle Number</b></label><br>
+        <!-- <input type="text" id="vehicleNumber" required><br><br> -->
+        <select name="vehicleNumber" type="text" id="vehicleNumber" required>
+            <option value="KDN 438R">KDN 438R</option>
+            <option value="KDD 567P">KDD 567P</option>
+            <option value="KCS 677K">KCS 677K</option>
+            <option value="KDE 678H">KDE 678H</option>
+        </select><br>
+
+        <label for="seatNumber"><b>Seat Number</b></label><br>
+        <input type="text" id="seatNumber" required><br>
+
+        <label for="fare"><b>Fare</b></label><br>
+        <input type="number" id="fare" required><br>
+
+        <label for="passengerName"><b>Passenger Name</b></label><br>
+        <input type="text" id="passengerName" required><br>
+
+        <label for="passengerPhone"><b>Passenger Phone</b></label><br>
+        <input type="text" id="passengerPhone" required><br>
+
+        <label for="servedBy"><b>Served By</b></label><br>
+        <!-- <input type="text" id="servedBy" required><br> -->
+        <select name="servedBy" type="text" id="servedBy" required>
+            <option value="Michael Festas">Michael Festas</option>
+            <option value="Leilah Aketch">Leilah Aketch</option>
+            <option value="Teddy Omondi">Teddy Omondi</option>
+        </select><br><br>
+
+        <button type="button" onclick="generateTicket()">Generate Ticket</button>
+    </form>
+
+    <div id="ticketContainer"></div>
+
+    <script src="receipt.js"></script>
+</body>
+</html>
